@@ -1,10 +1,17 @@
+---
+layout: onepage
+image: /img/meta/omniocn-2016-teaser-fn-cover.png
+---
+
 <!DOCTYPE html>
 
 <html lang="en-US">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="ThemeStarz">
+    <meta name="author" content="Tetra Events">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="/fonts/font-awesome/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="/css/bootstrap-select.min.css" type="text/css">
@@ -12,7 +19,20 @@
     <link rel="stylesheet" href="/css/owl.transitions.css" type="text/css">
     <link rel="stylesheet" href="/css/animate.css" type="text/css">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
-    <title>EVENTˣ</title>
+
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:image" content="{{ site.url}}{% if page.image %}{{ page.image }}{% else %}/img/carousel/promotion_image.jpg{% endif %}">
+    {% if page.image1 %}<meta property="og:image" content="{{ site.url}}{{ page.image1 }}">{% endif %}
+    {% if page.image2 %}<meta property="og:image" content="{{ site.url}}{{ page.image2 }}">{% endif %}
+    {% if page.image3 %}<meta property="og:image" content="{{ site.url}}{{ page.image3 }}">{% endif %}
+    {% if page.image4 %}<meta property="og:image" content="{{ site.url}}{{ page.image4 }}">{% endif %}
+    {% if page.image5 %}<meta property="og:image" content="{{ site.url}}{{ page.image5 }}">{% endif %}
+    {% if page.image6 %}<meta property="og:image" content="{{ site.url}}{{ page.image6 }}">{% endif %}
+
+    <meta name="description" content="{%if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    <title>{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 </head>
 
 <body data-spy="scroll" data-target=".navigation" data-offset="150" id="top">
@@ -38,11 +58,10 @@
                     <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
                         <ul class="nav navbar-nav">
                             <li><a href="#top" class="fade-in">Home</a></li>
+                            <li><a href="#speakers" class="fade-in">Guests</a></li>
                             <li><a href="#schedule" class="fade-in">Schedule</a></li>
-                            <li><a href="#speakers" class="fade-in">Speakers</a></li>
                             <li><a href="#about" class="fade-in">About</a></li>
-                            <li><a href="#tickets" class="fade-in">Tickets</a></li>
-                            <li><a href="#register" class="fade-in">Register</a></li>
+                            <li><a href="#tickets" class="fade-in">Tickets & Registration</a></li>
                             <li><a href="#contact" class="fade-in">Contact</a></li>
                         </ul>
                     </nav><!-- /.navbar collapse-->
@@ -61,8 +80,8 @@
                     <div><i class="fa fa-calendar"></i>08/05/2016</div>
                 </div>
                 <div class="title-wrapper fade-in">
-                    <div class="title expand move"><h1></h1><img src="/img/logo2.png" style="height: 71px; width: 200px;" alt="brand"></div>
-                    <div class="title expand move"><h4>Video Games + Comics + Anime</h4></div>
+                    <div class="title expand move"><h1>Omnicon</h1><!--<img src="/img/logo2.png" style="height: 71px; width: 200px;" alt="brand">--></div>
+                    <!--<div class="title expand move"><h4>Video Games + Comics + Anime</h4></div>-->
                 </div>
                 <div class="call-to-action fade-in move">
                     <a href="#register" class="roll">Register!</a>
@@ -71,10 +90,10 @@
         </div>
         <div id="slider" class="owl-carousel has-parallax">
             <div class="slide">
-                <img src="/img/carousel/omniocn-2016-header-4.png" alt="">
+                <img src="/img/carousel/omniocn-2016-header-4.jpg" alt="">
             </div>
             <div class="slide">
-                <img src="/img/carousel/omniocn-2016-header-4.png" alt="">
+                <img src="/img/carousel/omniocn-2016-header-4.jpg" alt="">
             </div>
         </div>
     </div>
@@ -83,16 +102,79 @@
     <!-- Page Content -->
     <div id="page-content">
 
+                <!-- Speakers -->
+        <section id="speakers" class="block">
+            <div class="container">
+                <header>
+                    <h2><a href="#speakers" class="roll">Guests</a></h2>
+                </header>
+                <section class="speakers background-stripe">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-sm-offset-4">
+                            <div class="speaker">
+                                <aside class="image">
+                                    <div class="plus-wrapper" data-toggle="modal" data-target="#modal1">
+                                        <div class="plus"><i class="fa fa-plus"></i></div>
+                                    </div>
+                                    <img src="/img/speaker-01.png" alt="">
+                                </aside>
+                                <h3>TBA</h3>
+                                <h4>Guest Info Coming Soon</h4>
+                            </div><!-- .speaker -->
+                        </div><!-- .col-md-3 -->
+                        <!--<div class="col-md-3 col-sm-3">
+                            <div class="speaker">
+                                <aside class="image">
+                                    <div class="plus-wrapper" data-toggle="modal" data-target="#modal2">
+                                        <div class="plus"><i class="fa fa-plus"></i></div>
+                                    </div>
+                                    <img src="/img/speaker-02.png" alt="">
+                                </aside>
+                                <h3>Mellanie Pearl</h3>
+                                <h4>Freelance Designer</h4>
+                            </div>
+                        </div>-->
+                        <!--<div class="col-md-3 col-sm-3">
+                            <div class="speaker">
+                                <aside class="image">
+                                    <div class="plus-wrapper" data-toggle="modal" data-target="#modal3">
+                                        <div class="plus"><i class="fa fa-plus"></i></div>
+                                    </div>
+                                    <img src="/img/speaker-03.png" alt="">
+                                </aside>
+                                <h3>John Doe</h3>
+                                <h4>Marketing Guru</h4>
+                            </div>
+                        </div>-->
+                        <!--<div class="col-md-3 col-sm-3">
+                            <div class="speaker">
+                                <aside class="image">
+                                    <div class="plus-wrapper" data-toggle="modal" data-target="#modal4">
+                                        <div class="plus"><i class="fa fa-plus"></i></div>
+                                    </div>
+                                    <img src="/img/speaker-04.png" alt="">
+                                </aside>
+                                <h3>Stephanie Parks</h3>
+                                <h4>Coding Ninja</h4>
+                            </div>
+                        </div> -->
+                    </div><!-- .row -->
+                </section><!-- .speakers -->
+            </div><!-- .container -->
+        </section>
+        <!-- end Speakers -->
+<hr/>
+
         <!-- Schedule -->
-        <section class="block background-color-grey-light" id="schedule">
+        <section class="block" id="schedule">
             <div class="container">
                 <header>
                     <h2><a href="#schedule" class="roll">Schedule</a></h2>
                 </header>
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
-                    <li class="active"><a href="#september-26" role="tab" data-toggle="tab">Monday, September 26</a></li>
-                    <li><a href="#september-27" role="tab" data-toggle="tab">Tuesday, September 27</a></li>
+                    <li class="active"><a href="#september-26" role="tab" data-toggle="tab">Coming Soon</a></li>
+                    <!--<li><a href="#september-27" role="tab" data-toggle="tab">Tuesday, September 27</a></li>-->
                 </ul>
                 <!-- Tab panes -->
                 <div class="tab-content">
@@ -104,11 +186,11 @@
                                         <div class="col-md-2 col-sm-2">
                                             <div class="time">
                                                 <i class="fa fa-clock-o"></i>
-                                                <figure>08:00</figure>
+                                                <figure>TBA</figure>
                                             </div>
                                         </div>
                                         <div class="col-md-10 col-sm-10">
-                                            <div class="title"><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3></div>
+                                            <div class="title"><h3>Check back here for updates to our schedule and event announcements.</h3></div>
                                         </div>
                                     </div>
                                     <i class="fa fa-plus"></i>
@@ -117,64 +199,13 @@
                                     <div class="row">
                                         <div class="col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2">
                                             <div class="panel-body">
-                                                <p>Duis vel aliquet nibh. Duis nec ultricies purus. Donec hendrerit eget turpis in fringilla. Vivamus vitae feugiat sapien. Donec semper ligula non cursus maximus. Donec congue id ligula at ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
+                                                <p>We absolutely promise to post this more than a week before the event. Cross our hearts and hope to die... for real. We mean it this time.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div><!-- .panel-collapse -->
                             </div><!-- .panel -->
 
-                            <div class="panel panel-default">
-                                <a href="#september-26-2" class="panel-header" data-toggle="collapse" data-parent="#schedule-table-september-26">
-                                    <div class="row">
-                                        <div class="col-md-2 col-sm-2">
-                                            <div class="time">
-                                                <i class="fa fa-clock-o"></i>
-                                                <figure>09:30</figure>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-10 col-sm-10">
-                                            <div class="title"><h3>Aenean suscipit euismod nisl, eget vehicula est bibendum et</h3></div>
-                                        </div>
-                                    </div>
-                                    <i class="fa fa-plus"></i>
-                                </a><!-- .panel-header -->
-                                <div id="september-26-2" class="panel-collapse collapse description">
-                                    <div class="row">
-                                        <div class="col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2">
-                                            <div class="panel-body">
-                                                <p>Praesent quis sem sed est feugiat tincidunt ut sit amet augue. Sed ac libero iaculis, laoreet enim nec, pretium ante. Donec facilisis, turpis eget vulputate maximus, leo augue viverra elit, nec dapibus turpis felis id magna. Mauris dapibus eleifend ipsum, a tempor massa blandit ut</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!-- .panel-collapse -->
-                            </div><!-- .panel -->
-
-                            <div class="panel panel-default">
-                                <a href="#september-26-3" class="panel-header" data-toggle="collapse" data-parent="#schedule-table-september-26">
-                                    <div class="row">
-                                        <div class="col-md-2 col-sm-2">
-                                            <div class="time">
-                                                <i class="fa fa-clock-o"></i>
-                                                <figure>10:45</figure>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-10 col-sm-10">
-                                            <div class="title"><h3>Coffee Break</h3></div>
-                                        </div>
-                                    </div>
-                                    <i class="fa fa-plus"></i>
-                                </a><!-- .panel-header -->
-                                <div id="september-26-3" class="panel-collapse collapse description">
-                                    <div class="row">
-                                        <div class="col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2">
-                                            <div class="panel-body">
-                                                <p>Nulla volutpat aliquam augue, et ullamcorper turpis porttitor a. Duis ac faucibus augue. Maecenas vel massa varius, rhoncus nibh id, sodales nisi.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!-- .panel-collapse -->
-                            </div><!-- .panel -->
 
                         </div>
                     </div><!-- .tab-pane -->
@@ -292,100 +323,6 @@
         </section>
         <!-- end Schedule -->
 
-        <!-- Speakers -->
-        <section id="speakers" class="block">
-            <div class="container">
-                <header>
-                    <h2><a href="#speakers" class="roll">Guests</a></h2>
-                </header>
-                <section class="speakers background-stripe">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-3 col-sm-offset-4">
-                            <div class="speaker">
-                                <aside class="image">
-                                    <div class="plus-wrapper" data-toggle="modal" data-target="#modal1">
-                                        <div class="plus"><i class="fa fa-plus"></i></div>
-                                    </div>
-                                    <img src="/img/speaker-01.png" alt="">
-                                </aside>
-                                <h3>TBA</h3>
-                                <h4>Guest Info Coming Soon</h4>
-                            </div><!-- .speaker -->
-                        </div><!-- .col-md-3 -->
-                        <!--<div class="col-md-3 col-sm-3">
-                            <div class="speaker">
-                                <aside class="image">
-                                    <div class="plus-wrapper" data-toggle="modal" data-target="#modal2">
-                                        <div class="plus"><i class="fa fa-plus"></i></div>
-                                    </div>
-                                    <img src="/img/speaker-02.png" alt="">
-                                </aside>
-                                <h3>Mellanie Pearl</h3>
-                                <h4>Freelance Designer</h4>
-                            </div>
-                        </div>-->
-                        <!--<div class="col-md-3 col-sm-3">
-                            <div class="speaker">
-                                <aside class="image">
-                                    <div class="plus-wrapper" data-toggle="modal" data-target="#modal3">
-                                        <div class="plus"><i class="fa fa-plus"></i></div>
-                                    </div>
-                                    <img src="/img/speaker-03.png" alt="">
-                                </aside>
-                                <h3>John Doe</h3>
-                                <h4>Marketing Guru</h4>
-                            </div>
-                        </div>-->
-                        <!--<div class="col-md-3 col-sm-3">
-                            <div class="speaker">
-                                <aside class="image">
-                                    <div class="plus-wrapper" data-toggle="modal" data-target="#modal4">
-                                        <div class="plus"><i class="fa fa-plus"></i></div>
-                                    </div>
-                                    <img src="/img/speaker-04.png" alt="">
-                                </aside>
-                                <h3>Stephanie Parks</h3>
-                                <h4>Coding Ninja</h4>
-                            </div>
-                        </div> -->
-                    </div><!-- .row -->
-                </section><!-- .speakers -->
-            </div><!-- .container -->
-        </section>
-        <!-- end Speakers -->
-        <hr>
-        <!-- Subscribe -->
-        <section id="subscribe" class="block">
-            <div class="container">
-                <header>
-                    <h2><a href="#subscribe" class="roll">Subscribe</a></h2>
-                </header>
-                <form id="form-subscribe" role="form">
-                    <div class="form-wrapper">
-                        <div class="row">
-                            <div class="col-md-5 col-sm-4">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="subscribe-name" name="subscribe-name" placeholder="Name" required>
-                                </div><!-- /.form-group -->
-                            </div><!-- .col-md-5 -->
-                            <div class="col-md-4 col-sm-4">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="subscribe-email" name="subscribe-email" placeholder="E-mail" required>
-                                </div><!-- /.form-group -->
-                            </div><!-- .col-md-4 -->
-                            <div class="col-md-3 col-sm-4">
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-primary">Subscribe Now <i class="fa fa-angle-right"></i></button>
-                                </div><!-- /.form-group -->
-                            </div><!-- .col-md-3 -->
-                            <div id="form-subscribe-status" class="hide-status status-successful"></div>
-                        </div><!-- .row -->
-                    </div><!-- .form-wrapper -->
-
-                </form><!-- #form-subscribe -->
-            </div><!-- .container -->
-        </section>
-        <!-- end Subscribe -->
 
         <!-- About -->
         <section id="about" class="block expand left background-color-grey-light">
@@ -425,7 +362,7 @@
         <section id="tickets" class="block">
             <div class="container">
                 <header>
-                    <h2><a href="#tickets" class="roll">Tickets</a></h2>
+                    <h2><a href="#tickets" class="roll">Tickets & Registration</a></h2>
                 </header>
                 <div class="tickets">
                     <div class="row">
@@ -433,9 +370,15 @@
                             <div class="description">
                                 <header class="equal-height"></header>
                                 <ul>
-                                    <li>Seat</li>
-                                    <li>Catering</li>
-                                    <li>VIP Party</li>
+                                    <li>2-Day Access</li>
+                                    <li>Omnicon Badge</li>
+                                    <li>Full Color Program</li>
+                                    <li>Poster</li>
+                                    <li>T-Shirt</li>
+                                    <li>Head of the Line Access</li>
+                                    <li>Early Vendor Access</li>
+                                    <li>Limited Edition Badge</li>
+                                    <li>Register Now:</li>
                                 </ul>
                             </div><!-- .description -->
                         </div><!-- .col-md-3 -->
@@ -443,12 +386,18 @@
                             <div class="ticket">
                                 <header class="equal-height">
                                     <h3>2-Day Pass</h3>
-                                    <figure>$50</figure>
+                                    <figure>Best Price</figure>
                                 </header>
                                 <ul>
-                                    <li class="checked"><i class="fa fa-check"></i><span>Seat</span></li>
-                                    <li class="unchecked"><i class="fa fa-times"></i><span>Catering</span></li>
-                                    <li class="unchecked"><i class="fa fa-times"></i><span>VIP Party</span></li>
+                                    <li class="checked"><i class="fa fa-check"></i><span></span></li>
+                                    <li class="checked"><i class="fa fa-check"></i><span></span></li>
+                                    <li class="unchecked"><i class="fa fa-times"></i><span></span></li>
+                                    <li class="unchecked"><i class="fa fa-times"></i><span></span></li>
+                                    <li class="unchecked"><i class="fa fa-times"></i><span></span></li>
+                                    <li class="unchecked"><i class="fa fa-times"></i><span></span></li>
+                                    <li class="unchecked"><i class="fa fa-times"></i><span></span></li>
+                                    <li class="unchecked"><i class="fa fa-times"></i><span></span></li>
+                                    <li class="unchecked"><button class="btn btn-primary"><a href="https://www.google.com/url?q=https%3A%2F%2Fwww.eventbrite.com%2Fe%2Fomnicon-2016-tickets-17931431394&sa=D&sntz=1&usg=AFQjCNHiG-zvji0eRKWFtSEcchsZi6hkpQ">$50</a></button></li>
                                 </ul>
                             </div><!-- .ticket -->
                         </div><!-- .col-md-3 -->
@@ -456,12 +405,18 @@
                             <div class="ticket">
                                 <header class="equal-height">
                                     <h3>Fan Pack</h3>
-                                    <figure>$65</figure>
+                                    <figure>Great Deal</figure>
                                 </header>
                                 <ul>
-                                    <li class="checked"><i class="fa fa-check"></i><span>Seat</span></li>
-                                    <li class="checked"><i class="fa fa-check"></i><span>Catering</span></li>
-                                    <li class="unchecked"><i class="fa fa-times"></i><span>VIP Party</span></li>
+                                    <li class="checked"><i class="fa fa-check"></i><span></span></li>
+                                    <li class="checked"><i class="fa fa-check"></i><span></span></li>
+                                    <li class="checked"><i class="fa fa-check"></i><span></span></li>
+                                    <li class="checked"><i class="fa fa-check"></i><span></span></li>
+                                    <li class="checked"><i class="fa fa-check"></i><span></span></li>
+                                    <li class="unchecked"><i class="fa fa-times"></i><span></span></li>
+                                    <li class="unchecked"><i class="fa fa-times"></i><span></span></li>
+                                    <li class="unchecked"><i class="fa fa-times"></i><span></span></li>
+                                    <li class="unchecked"><button class="btn btn-primary"><a href="https://www.google.com/url?q=https%3A%2F%2Fwww.eventbrite.com%2Fe%2Fomnicon-2016-tickets-17931431394&sa=D&sntz=1&usg=AFQjCNHiG-zvji0eRKWFtSEcchsZi6hkpQ">$65</a></button></li>
                                 </ul>
                             </div><!-- .ticket -->
                         </div><!-- .col-md-3 -->
@@ -469,12 +424,18 @@
                             <div class="ticket">
                                 <header class="equal-height">
                                     <h3>OMNIPASS</h3>
-                                    <figure>$80</figure>
+                                    <figure>Best Value</figure>
                                 </header>
                                 <ul>
-                                    <li class="checked"><i class="fa fa-check"></i><span>Seat</span></li>
-                                    <li class="checked"><i class="fa fa-check"></i><span>Catering</span></li>
-                                    <li class="checked"><i class="fa fa-check"></i><span>VIP Party</span></li>
+                                    <li class="checked"><i class="fa fa-check"></i><span></span></li>
+                                    <li class="checked"><i class="fa fa-check"></i><span></span></li>
+                                    <li class="checked"><i class="fa fa-check"></i><span></span></li>
+                                    <li class="checked"><i class="fa fa-check"></i><span></span></li>
+                                    <li class="checked"><i class="fa fa-check"></i><span></span></li>
+                                    <li class="checked"><i class="fa fa-check"></i><span></span></li>
+                                    <li class="checked"><i class="fa fa-check"></i><span></span></li>
+                                    <li class="checked"><i class="fa fa-check"></i><span></span></li>
+                                    <li class="checked"><button class="btn btn-primary"><a href="https://www.google.com/url?q=https%3A%2F%2Fwww.eventbrite.com%2Fe%2Fomnicon-2016-tickets-17931431394&sa=D&sntz=1&usg=AFQjCNHiG-zvji0eRKWFtSEcchsZi6hkpQ">$80</a></button></li>
                                 </ul>
                             </div><!-- .ticket -->
                         </div><!-- .col-md-3 -->
@@ -484,47 +445,6 @@
         </section>
         <!-- end Tickets -->
 
-        <!-- Register -->
-        <section id="register">
-            <div class="container">
-                <header>
-                    <h2><a href="#register" class="roll">Register</a></h2>
-                </header>
-                <form id="form-register" method="post" class="background-color-default">
-                    <div class="form-wrapper">
-                        <div class="row">
-                            <div class="col-md-4 col-sm-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="register-name" name="register-name" placeholder="Name" required>
-                                </div><!-- /.form-group -->
-                            </div><!-- .col-md-5 -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="register-email" name="register-email" placeholder="E-mail" required>
-                                </div><!-- /.form-group -->
-                            </div><!-- .col-md-4 -->
-                            <div class="col-md-2 col-sm-6">
-                                <div class="form-group">
-                                    <select name="register_ticket" id="register_ticket">
-                                        <option value="">Ticket</option>
-                                        <option value="Silver">Silver</option>
-                                        <option value="Gold">Gold</option>
-                                        <option value="Platinum">Platinum</option>
-                                    </select>
-                                </div>
-                            </div><!-- .col-md-4 -->
-                            <div class="col-md-2 col-sm-6">
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-default">Register<i class="fa fa-angle-right"></i></button>
-                                </div><!-- /.form-group -->
-                            </div><!-- .col-md-3 -->
-                            <div id="form-register-status" class="hide-status status-successful color-background"></div>
-                        </div><!-- .row -->
-                    </div><!-- .form-wrapper -->
-                </form><!-- #form-register -->
-            </div><!-- .container -->
-        </section>
-        <!-- end Register -->
 
         <!-- Testimonials -->
         <section id="testimonials" class="block expand right background-color-grey-light">
@@ -534,15 +454,16 @@
                     <blockquote class="testimonial">
                         <figure>
                             <div class="image">
-                                <img alt="" src="/img/speaker-02.png" alt="">
+                                <img alt="" src="/img/headshots/gameinformer-pic.jpg" alt="">
                             </div>
                         </figure>
                         <aside class="cite">
-                            <p>Praesent tempus urna id leo ullamcorper euismod. Mauris placerat ornare risus, lobortis posuere erat porttitor vitae. Nulla ac diam sem.</p>
-                            <footer>Suzane Nowell</footer>
-                            <figure>Home Design</figure>
+                            <p>"A Cosplayer's Dream"</p>
+                            <footer>-Game Informer Magazine</footer>
+                            <figure></figure>
                         </aside>
                     </blockquote>
+                    <!--
                     <blockquote class="testimonial">
                         <figure>
                             <div class="image">
@@ -554,30 +475,11 @@
                             <footer>Natalie Jenkins</footer>
                             <figure>Old School Architects</figure>
                         </aside>
-                    </blockquote>
+                    </blockquote>-->
                 </div><!-- /.testimonials-carousel -->
             </div><!-- .container -->
         </section>
         <!-- end Testimonials -->
-
-        <!-- Partners -->
-        <section id="partners" class="block">
-            <div class="container">
-                <header>
-                    <h2><a href="#tickets" class="roll">Partners</a></h2>
-                </header>
-                <div class="logos">
-                    <div class="logo"><a href=""><img src="/img/logo-partner-01.png" alt=""></a></div>
-                    <div class="logo"><a href=""><img src="/img/logo-partner-02.png" alt=""></a></div>
-                    <div class="logo"><a href=""><img src="/img/logo-partner-03.png" alt=""></a></div>
-                    <div class="logo"><a href=""><img src="/img/logo-partner-04.png" alt=""></a></div>
-                    <div class="logo"><a href=""><img src="/img/logo-partner-05.png" alt=""></a></div>
-                </div>
-            </div><!-- .container -->
-        </section>
-        <!-- end Partners -->
-    </div>
-    <!-- end Page Content -->
 
     <!-- Footer -->
     <footer id="contact">
@@ -613,11 +515,10 @@
                         <section class="contact float">
                             <h3>Get Connected</h3>
                             <div class="social">
-                                <a href="https://www.facebook.com/Omniconconvention">Facebook</a>
-                                <a href="#">Twitter</a>
-                                <a href="#">YouTube</a>
+                                <a href="https://www.facebook.com/omniconconvention">Facebook</a>
+                                <a href="https://www.twitter.com/omnicononline">Twitter</a>
                             </div>
-                            <span>Reach us at <a href="mailto:eventx@example.com">eventx@example.com</a> for any questions</span>
+                            <span>Reach us at <a href="mailto:info@omnicononline.com">info@omnicononline.com</a> for any questions</span>
                         </section>
                     </div><!-- .col-md-5 -->
                 </div><!-- .row -->
@@ -643,23 +544,19 @@
                         </aside>
                     </div><!-- .speaker -->
                     <div class="speaker-name">
-                        <h1>TBA</h1>
-                        <h2>CEO at M&D</h2>
+                        <h1>Coming Soon</h1>
+                        <h2>TBA</h2>
                     </div>
                 </div>
             </div><!-- .modal-header -->
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-3 col-sm-3">
-                        <div class="social">
-                            <a href="https://www.facebook.com/Omniconconvention">Facebook</a>
-                            <a href="#">Twitter</a>
-                            <a href="#">YouTube</a>
-                        </div>
+
                     </div>
                     <div class="col-md-9 col-sm-9">
-                        <h3>About me</h3>
-                        <p>Duis vel aliquet nibh. Duis nec ultricies purus. Donec hendrerit eget turpis in fringilla. Vivamus vitae feugiat sapien. Donec semper ligula non cursus maximus. Donec congue id ligula at ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
+                        <h3>About Our Guests</h3>
+                        <p>Omnicon invites your favorite voice actors, cosplayers, and community heros to attend our event. Each guest is available to meet and sign autographs for attendees. Check back with us for more updates on who will be joining us for Omnicon 2016.</p>
                     </div>
                 </div>
             </div><!-- .modal-body -->
@@ -667,17 +564,17 @@
                 <div class="speak">
                     <div class="row">
                         <div class="col-md-8 col-sm-7">
-                            <div class="title"><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3></div>
+                            <div class="title"><h3>Get ready for AWESOME...</h3></div>
                         </div>
                         <div class="col-md-4 col-sm-5">
                             <div class="date-time">
                                 <div class="date">
                                     <i class="fa fa-calendar"></i>
-                                    <figure>Monday, September 26</figure>
+                                    <figure>Coming Soon</figure>
                                 </div>
                                 <div class="time">
                                     <i class="fa fa-clock-o"></i>
-                                    <figure>08:00</figure>
+                                    <figure>TBA</figure>
                                 </div>
                             </div>
                         </div>
@@ -880,8 +777,8 @@
 
 <!-- Google Maps -->
 <script type="text/javascript">
-    var _latitude = 26.2005839;
-    var _longitude = -98.2936209;
+    var _latitude = 26.200588;
+    var _longitude = -98.259288;
     var markerAddress = "700 Convention Center Blvd<br/> McAllen, TX 78501";
     var mapStyles = [{featureType:'water',elementType:'all',stylers:[{hue:'#d7ebef'},{saturation:-5},{lightness:54},{visibility:'on'}]},{featureType:'landscape',elementType:'all',stylers:[{hue:'#eceae6'},{saturation:-49},{lightness:22},{visibility:'on'}]},{featureType:'poi.park',elementType:'all',stylers:[{hue:'#dddbd7'},{saturation:-81},{lightness:34},{visibility:'on'}]},{featureType:'poi.medical',elementType:'all',stylers:[{hue:'#dddbd7'},{saturation:-80},{lightness:-2},{visibility:'on'}]},{featureType:'poi.school',elementType:'all',stylers:[{hue:'#c8c6c3'},{saturation:-91},{lightness:-7},{visibility:'on'}]},{featureType:'landscape.natural',elementType:'all',stylers:[{hue:'#c8c6c3'},{saturation:-71},{lightness:-18},{visibility:'on'}]},{featureType:'road.highway',elementType:'all',stylers:[{hue:'#dddbd7'},{saturation:-92},{lightness:60},{visibility:'on'}]},{featureType:'poi',elementType:'all',stylers:[{hue:'#dddbd7'},{saturation:-81},{lightness:34},{visibility:'on'}]},{featureType:'road.arterial',elementType:'all',stylers:[{hue:'#dddbd7'},{saturation:-92},{lightness:37},{visibility:'on'}]},{featureType:'transit',elementType:'geometry',stylers:[{hue:'#c8c6c3'},{saturation:4},{lightness:10},{visibility:'on'}]}];
 
