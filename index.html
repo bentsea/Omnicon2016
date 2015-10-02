@@ -33,6 +33,17 @@ image: /img/meta/omniocn-2016-teaser-fn-cover.png
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
     <title>{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-67413907-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 </head>
 
 <body data-spy="scroll" data-target=".navigation" data-offset="150" id="top">
@@ -61,7 +72,7 @@ image: /img/meta/omniocn-2016-teaser-fn-cover.png
                             <li><a href="#speakers" class="fade-in">Guests</a></li>
                             <li><a href="#schedule" class="fade-in">Schedule</a></li>
                             <li><a href="#about" class="fade-in">About</a></li>
-                            <li><a href="#tickets" class="fade-in">Tickets & Registration</a></li>
+                            <li><a href="#register" class="fade-in">Tickets & Registration</a></li>
                             <li><a href="#contact" class="fade-in">Contact</a></li>
                         </ul>
                     </nav><!-- /.navbar collapse-->
@@ -871,6 +882,7 @@ image: /img/meta/omniocn-2016-teaser-fn-cover.png
     }
 
 </script>
+
 
 </body>
 </html>
