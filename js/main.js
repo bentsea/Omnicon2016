@@ -2,7 +2,7 @@ var dp = jQuery;
 dp.noConflict();
 dp(document).ready(function() {
 
-    //SMOOTH SCROLL 
+    //SMOOTH SCROLL
     dp('.sscroll').bind('click.smoothscroll', function(e) {
         e.preventDefault();
         dp('html,body').animate({
@@ -52,7 +52,7 @@ dp(document).ready(function() {
     });
     // TOOTLTIP
     dp("[data-toggle='tooltip']").tooltip();
-    //  Responsive layout, resizing the items   
+    //  Responsive layout, resizing the items
     if (dp('.client-slider').length > 0) {
         dp('.client-slider').carouFredSel({
             responsive: true,
@@ -191,7 +191,7 @@ dp(document).ready(function() {
                 latLng: [lats, lngs],
                 data: data_address,
                 options: {
-                    icon: "images/map-marker.png"
+                    icon: "/img/marker.png"
                 }
             }],
             options: {

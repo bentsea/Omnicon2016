@@ -1454,7 +1454,6 @@ footer .footer-bottom .copyright {
 }
 footer .footer-bottom .contact.float {
   position: relative;
-  top: -40px;
 }
 footer .footer-bottom .contact > span {
   display: block;

@@ -1,86 +1,40 @@
 ---
-layout: onepage
+layout: default
+description: Omnicon returns, the best pop-culture convention in south Texas! Awesome vendors, voice actors, and cosplay at an unforgettable event, August 5-6, 2016
 image: /img/meta/omniocn-2016-teaser-fn-cover.png
 ---
 
-<!DOCTYPE html>
-
-<html lang="en-US">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Tetra Events">
-    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" href="/fonts/font-awesome/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="/css/bootstrap-select.min.css" type="text/css">
-    <link rel="stylesheet" href="/css/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="/css/owl.transitions.css" type="text/css">
-    <link rel="stylesheet" href="/css/animate.css" type="text/css">
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
-
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:image" content="{{ site.url}}{% if page.image %}{{ page.image }}{% else %}/img/carousel/promotion_image.jpg{% endif %}">
-    {% if page.image1 %}<meta property="og:image" content="{{ site.url}}{{ page.image1 }}">{% endif %}
-    {% if page.image2 %}<meta property="og:image" content="{{ site.url}}{{ page.image2 }}">{% endif %}
-    {% if page.image3 %}<meta property="og:image" content="{{ site.url}}{{ page.image3 }}">{% endif %}
-    {% if page.image4 %}<meta property="og:image" content="{{ site.url}}{{ page.image4 }}">{% endif %}
-    {% if page.image5 %}<meta property="og:image" content="{{ site.url}}{{ page.image5 }}">{% endif %}
-    {% if page.image6 %}<meta property="og:image" content="{{ site.url}}{{ page.image6 }}">{% endif %}
-
-    <meta name="description" content="{%if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-    <title>{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-67413907-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-</head>
-
-<body data-spy="scroll" data-target=".navigation" data-offset="150" id="top">
-<!-- Wrapper -->
-<div class="wrapper">
-
-    <!-- Navigation -->
-    <div class="navigation fade-in">
-        <div class="container">
-            <header class="navbar" role="banner">
-                <div class="navbar-header">
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <div class="navbar-brand nav" id="brand">
-                        <a href="#top"><img src="/img/logo.png" alt="brand"></a>
-                    </div>
+  <!-- Navigation -->
+  <div class="navigation fade-in">
+    <div class="container">
+        <header class="navbar" role="banner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand nav" id="brand">
+                    <a href="#top"><img src="/img/logo.png" alt="brand"></a>
                 </div>
-                <div class="navigation-wrapper">
-                    <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#top" class="fade-in">Home</a></li>
-                            <li><a href="#speakers" class="fade-in">Guests</a></li>
-                            <li><a href="#schedule" class="fade-in">Schedule</a></li>
-                            <li><a href="#about" class="fade-in">About</a></li>
-                            <li><a href="#register" class="fade-in">Tickets & Registration</a></li>
-                            <li><a href="#contact" class="fade-in">Contact</a></li>
-                        </ul>
-                    </nav><!-- /.navbar collapse-->
-                </div>
-            </header><!-- /.navbar -->
-        </div><!-- /.container -->
-    </div>
-    <!-- end Navigation -->
+            </div>
+            <div class="navigation-wrapper">
+                <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#top" class="fade-in">Home</a></li>
+                        <li><a href="#speakers" class="fade-in">Guests</a></li>
+                        <li><a href="#schedule" class="fade-in">Programming</a></li>
+                        <li><a href="#about" class="fade-in">About</a></li>
+                        <li><a href="#register" class="fade-in">Registration</a></li>
+                        <li><a href="/contact" class="fade-in">Info & Contact Us</a></li>
+                    </ul>
+                </nav><!-- /.navbar collapse-->
+            </div>
+        </header><!-- /.navbar -->
+    </div><!-- /.container -->
+  </div>
+  <!-- end Navigation -->
 
     <!-- Slider -->
     <div class="slider">
@@ -381,6 +335,29 @@ image: /img/meta/omniocn-2016-teaser-fn-cover.png
         </section>
         <!-- end About -->
 
+        <!-- Map -->
+        <section class="footer-top">
+            <div class="container">
+                <header>
+                    <h2><a href="#contact" class="roll">Locate Us</a></h2>
+                </header>
+                <div class="find-way">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-7 col-md-offset-7 col-sm-offset-5">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-map-marker"></i></div>
+                                    <input type="text" class="form-control" id="find-way" name="find-way" placeholder="Enter your location to find a way">
+                                </div>
+                            </div><!-- /.form-group -->
+                        </div><!-- .col-md-5 -->
+                    </div><!-- .row -->
+                </div><!-- .find-way -->
+            </div><!-- .container -->
+        </section>
+        <div id="map"></div><!-- #map -->
+        <!-- End Map -->
+
         <!-- Tickets -->
         <section id="register" class="block">
             <div class="container">
@@ -503,410 +480,3 @@ image: /img/meta/omniocn-2016-teaser-fn-cover.png
             </div><!-- .container -->
         </section>
         <!-- end Testimonials -->
-
-    <!-- Footer -->
-    <footer id="contact">
-        <section class="footer-top">
-            <div class="container">
-                <header>
-                    <h2><a href="#contact" class="roll">Contact & Location</a></h2>
-                </header>
-                <div class="find-way">
-                    <div class="row">
-                        <div class="col-md-5 col-sm-7 col-md-offset-7 col-sm-offset-5">
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <div class="input-group-addon"><i class="fa fa-map-marker"></i></div>
-                                    <input type="text" class="form-control" id="find-way" name="find-way" placeholder="Enter your location to find a way">
-                                </div>
-                            </div><!-- /.form-group -->
-                        </div><!-- .col-md-5 -->
-                    </div><!-- .row -->
-                </div><!-- .find-way -->
-            </div><!-- .container -->
-        </section>
-        <div id="map"></div><!-- #map -->
-        <section class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7 col-sm-6">
-                        <section class="copyright">
-                            <span>Copyright © <a href="#">OMNICON 2016</a> July 20, 2015</span>
-                        </section>
-                    </div><!-- .col-md-7 -->
-                    <div class="col-md-5 col-sm-6">
-                        <section class="contact float">
-                            <h3>Get Connected</h3>
-                            <div class="social">
-                                <a href="https://www.facebook.com/omniconconvention">Facebook</a>
-                                <a href="https://www.twitter.com/omnicononline">Twitter</a>
-                            </div>
-                            <span>Reach us at <a href="mailto:info@omnicononline.com">info@omnicononline.com</a> for any questions</span>
-                        </section>
-                    </div><!-- .col-md-5 -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </section>
-        <!-- .footer-bottom -->
-    </footer>
-    <!-- end Footer -->
-
-</div>
-<!-- end Wrapper -->
-
-<!-- Modal -->
-<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1-label" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <div class="speaker-wrapper">
-                    <div class="speaker">
-                        <aside class="image">
-                            <img src="/img/headshots/todd_haberkorn.jpg" alt="">
-                        </aside>
-                    </div><!-- .speaker -->
-                    <div class="speaker-name">
-                        <h1>Todd Haberkorn</h1>
-                        <h2>Producer, Writer, Director, Voice Actor</h2>
-                    </div>
-                </div>
-            </div><!-- .modal-header -->
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3">
-
-                    </div>
-                    <div class="col-md-9 col-sm-9">
-                        <h3>About Todd</h3>
-                        <p>Todd Haberkorn has been on stage, on set, and behind a mic for many years. Not only is Todd an actor in LA, he works as a producer, writer and director as well. And he's even been an action figure or two. Haberkornmobile sold separately.</p>
-
-                        <p>In the world of anime, Todd got his first major start in Suzuka as Yamato Akitski. From there, he went on to voice roles such as Jadeite from Sailor Moon, Natsu from Fairy Tail, Italy from Hetalia, Ling Yao from Full Metal Alchemist: Brotherhood, Cheren from Pokemon, Allen Walker from D. Gray Man, Hikaru Hitachin from Ouran High School Host Club, Death The Kid from Soul Eater, and many others. As far as video games go, you'd recognize his voice in the Call of Duty Series, Defiance, World of Warcraft, Street Fighter IV, Ghostbusters, Silent Hill: Book of Memories, Borderlands 2, and Rage to name a handful. His voice makes sure to get its marathon training in as an award winning narrator for audiobooks. Do a Google search and you'll find everything from thrillers and young adult to zombie sagas and children's books.</p>
-
-                        <p>As far as on camera is concerned, when he isn't working on films, industrials, and television projects for other companies, Todd does work with his company Out of the Office Productions. This is one aspect of a long history of on camera work in narrative film, commercials, and shorts. When he isn't fighting digital monsters in video games or trying to save the day on film, Todd travels in the U.S. and internationally making appearances at gnarly pop culture conventions as a guest to meet super cool fans and sign autographs. He is represented by The Horne Agency, Jeff Zannini Management, Johnson Talent Agency, and William Morris Endeavor.</p>
-                    </div>
-                </div>
-            </div><!-- .modal-body -->
-            <div class="modal-footer">
-                <div class="speak">
-                    <div class="row">
-                        <div class="col-md-8 col-sm-7">
-                            <div class="title"><h3>Get ready for AWESOME...</h3></div>
-                        </div>
-                        <div class="col-md-4 col-sm-5">
-                            <div class="date-time">
-                                <div class="date">
-                                    <i class="fa fa-calendar"></i>
-                                    <figure>Omnicon</figure>
-                                </div>
-                                <div class="time">
-                                    <i class="fa fa-clock-o"></i>
-                                    <figure>08 / 05 / 2016</figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- .row -->
-                </div><!-- .speak -->
-            </div><!-- .modal-footer -->
-        </div><!-- .modal-content -->
-    </div><!-- .modal-dialog -->
-</div><!-- #modal1 -->
-
-<!-- Modal -->
-<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2-label" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <div class="speaker-wrapper">
-                    <div class="speaker">
-                        <aside class="image">
-                            <img src="/img/headshots/headshot_cherami_leigh_thumbnail.jpg" alt="">
-                        </aside>
-                    </div><!-- .speaker -->
-                    <div class="speaker-name">
-                        <h1>Cherami Leigh</h1>
-                        <h2>Actress, Voice Actress</h2>
-                    </div>
-                </div>
-            </div><!-- .modal-header -->
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3">
-                        <div class="social">
-                            <a href="https://www.facebook.com/cherami.leigh">Facebook</a>
-                            <a href="https://twitter.com/cheramileigh">Twitter</a>
-                            <a href="https://www.youtube.com/watch?v=Sagg08DrO5U&feature=youtu.be">YouTube</a>
-                        </div>
-                    </div>
-                    <div class="col-md-9 col-sm-9">
-                        <h3>About me</h3>
-                        <p>Cherami Leigh has been in the industry for 20 years. She has been in over 75 commercials, and has worked on over 100 anime projects including "Lucy" in Fairy Tail, "Asuna" in Sword Art Online, "Road" in D. Grayman, "Lizzie" in Black Butler, "Mai" in Ghost Hunt, and "Patty" in Soul Eater and has worked on over 20 video games- including Borderlands 2- in which she plays the popular DLC- Gaige.</p>
-
-                        <p>She has also been announced to be playing "Sailor Venus" in Sailor Moon,"Mika" in Psycho Pass, Kajun in "BlazBlue" and Komaru Naegi in the latest installment of the "Dangan Ronpa" series. She is a series regular on the Sprout hit- "Zou", a lead role in the animated feature "Ribbit" has guest starred on "Doc McStuffins" and plays "Peanut Big Top" in the La La Loopsy Girls. She starred in Shane Dawson's "Not Cool" and the Starz Original Series "The Chair."</p>
-
-                        <p>She has appeared in the Emmy Award Winning "Temple Grandin", as well as "Friday Night Lights," "The Deep End," "Chase," "Shameless," "Bones" and "Longmire" to name a few. She worked on "Fast Food Nation," with Richard Linklater, "The Hottest State," with Ethan Hawke, "The Mist," with Frank Darabont among others. She also stars in the recently released faith based drama "Beyond the Farthest Star." She also starred in and produced two seasons of the award winning webseries "Throwing Stones." She has other projects in various stages of production she is excited to share!</p>
-                    </div>
-                </div>
-            </div><!-- .modal-body -->
-            <div class="modal-footer">
-                <div class="speak">
-                  <div class="row">
-                      <div class="col-md-8 col-sm-7">
-                          <div class="title"><h3>Get ready for AWESOME...</h3></div>
-                      </div>
-                      <div class="col-md-4 col-sm-5">
-                          <div class="date-time">
-                              <div class="date">
-                                  <i class="fa fa-calendar"></i>
-                                  <figure>Omnicon</figure>
-                              </div>
-                              <div class="time">
-                                  <i class="fa fa-clock-o"></i>
-                                  <figure>08 / 05 / 2016</figure>
-                              </div>
-                          </div>
-                      </div>
-                    </div><!-- .row -->
-                </div><!-- .speak -->
-            </div><!-- .modal-footer -->
-        </div><!-- .modal-content -->
-    </div><!-- .modal-dialog -->
-</div><!-- #modal2 -->
-
-<!-- Modal -->
-<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3-label" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <div class="speaker-wrapper">
-                    <div class="speaker">
-                        <aside class="image">
-                            <img src="/img/speaker-03.png" alt="">
-                        </aside>
-                    </div><!-- .speaker -->
-                    <div class="speaker-name">
-                        <h1>Todd Haberkorn</h1>
-                        <h2>Producer, Writer, Director, Voice Actor</h2>
-                    </div>
-                </div>
-            </div><!-- .modal-header -->
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3">
-                        <div class="social">
-                            <a href="https://www.facebook.com/Omniconconvention">Facebook</a>
-                            <a href="#">Twitter</a>
-                            <a href="#">YouTube</a>
-                        </div>
-                    </div>
-                    <div class="col-md-9 col-sm-9">
-                        <h3>About Me</h3>
-                        <p>Todd Haberkorn has been on stage, on set, and behind a mic for many years. Not only is Todd an actgor in LA, he works as a producer, writer and director as well. And he's even been an actgion figure or two. Haberkornmobile sold separately.</p>
-
-                        <p>In the world of anime, Todd got his first major start in Suzuka as Yamato Akitski. From there, he went on to voice roles such as Jadeite from Sailor Moon, Natsu from Fairy Tail, Italy from Hetalia, Ling Yao from Full Metal Alchemist: Brotherhood, Cheren from Pokemon, Allen Walker from D. Gray Man, Kikaru Kitachin from Ouran High School Host Club, Death The Kid from Soul Eater, and many others. As far as video games go, you'd recognize his voice in the CXall of Duty Series, Defiance, World of Warcarft, Street Fighter IV, Ghostbusters, Silent Hill: Book of Memories, Borderlands 2, and Rage to name a handful. His voice makes sure to get its marathon training in as an award winning narrator for audiobooks. Do a Google search and you'll find everything from thrillers and young adult to zombie sagas and children's books.</p>
-
-                        <p>As far as on camera is concerned, when he isn't working on films, industrials, and television projects for other companies, Todd does work with his company Out of the Office Productions. This is one aspect of a long history of on camera work in narrative film, commercials, and shorts. When he isn't fighting digital mosters in video games or trying to save the day on film, Todd travels in the U.S. and interationally making appearances at gnarly pop culture conventions as a guest to meet super cool fans and sign autographs. He is represented by The Horne Agency, Jeff Zannini Management, Johnson Talent Agency, and William Morris Endeavor.</p>
-                    </div>
-                </div>
-            </div><!-- .modal-body -->
-            <div class="modal-footer">
-                <div class="speak">
-                    <div class="row">
-                        <div class="col-md-8 col-sm-7">
-                            <div class="title"><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3></div>
-                        </div>
-                        <div class="col-md-4 col-sm-5">
-                            <div class="date-time">
-                                <div class="date">
-                                    <i class="fa fa-calendar"></i>
-                                    <figure>Monday, September 26</figure>
-                                </div>
-                                <div class="time">
-                                    <i class="fa fa-clock-o"></i>
-                                    <figure>08:00</figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- .row -->
-                </div><!-- .speak -->
-            </div><!-- .modal-footer -->
-        </div><!-- .modal-content -->
-    </div><!-- .modal-dialog -->
-</div><!-- #modal3 -->
-
-<!-- Modal -->
-<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4-label" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <div class="speaker-wrapper">
-                    <div class="speaker">
-                        <aside class="image">
-                            <img src="/img/speaker-04.png" alt="">
-                        </aside>
-                    </div><!-- .speaker -->
-                    <div class="speaker-name">
-                        <h1>Stephanie Parks</h1>
-                        <h2>Coding Ninja</h2>
-                    </div>
-                </div>
-            </div><!-- .modal-header -->
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3">
-                        <div class="social">
-                            <a href="https://www.facebook.com/Omniconconvention">Facebook</a>
-                            <a href="#">Twitter</a>
-                            <a href="#">YouTube</a>
-                        </div>
-                    </div>
-                    <div class="col-md-9 col-sm-9">
-                        <h3>About me</h3>
-                        <p>Duis vel aliquet nibh. Duis nec ultricies purus. Donec hendrerit eget turpis in fringilla. Vivamus vitae feugiat sapien. Donec semper ligula non cursus maximus. Donec congue id ligula at ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
-                    </div>
-                </div>
-            </div><!-- .modal-body -->
-            <div class="modal-footer">
-                <div class="speak">
-                    <div class="row">
-                        <div class="col-md-8 col-sm-7">
-                            <div class="title"><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3></div>
-                        </div>
-                        <div class="col-md-4 col-sm-5">
-                            <div class="date-time">
-                                <div class="date">
-                                    <i class="fa fa-calendar"></i>
-                                    <figure>Monday, September 26</figure>
-                                </div>
-                                <div class="time">
-                                    <i class="fa fa-clock-o"></i>
-                                    <figure>08:00</figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- .row -->
-                </div><!-- .speak -->
-            </div><!-- .modal-footer -->
-        </div><!-- .modal-content -->
-    </div><!-- .modal-dialog -->
-</div><!-- #modal4 -->
-
-<script type="text/javascript" src="/js/jquery-2.1.3.min.js"></script>
-<script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/js/smoothscroll.js"></script>
-<script type="text/javascript" src="/js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="/js/bootstrap-select.min.js"></script>
-<script type="text/javascript" src="/js/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/js/jquery.placeholder.js"></script>
-<script type="text/javascript" src="/js/icheck.min.js"></script>
-<script type="text/javascript" src="/js/jquery.eachStep.min.js"></script>
-<script type="text/javascript" src="/js/jquery.fitvids.js"></script>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=places"></script>
-<script type="text/javascript" src="/js/markerwithlabel_packed.js"></script>
-<script type="text/javascript" src="/js/retina-1.1.0.min.js"></script>
-<script type="text/javascript" src="/js/custom.js"></script>
-
-<!-- Google Maps -->
-<script type="text/javascript">
-    var _latitude = 26.200588;
-    var _longitude = -98.259288;
-    var markerAddress = "700 Convention Center Blvd<br/> McAllen, TX 78501";
-    var mapStyles = [{featureType:'water',elementType:'all',stylers:[{hue:'#d7ebef'},{saturation:-5},{lightness:54},{visibility:'on'}]},{featureType:'landscape',elementType:'all',stylers:[{hue:'#eceae6'},{saturation:-49},{lightness:22},{visibility:'on'}]},{featureType:'poi.park',elementType:'all',stylers:[{hue:'#dddbd7'},{saturation:-81},{lightness:34},{visibility:'on'}]},{featureType:'poi.medical',elementType:'all',stylers:[{hue:'#dddbd7'},{saturation:-80},{lightness:-2},{visibility:'on'}]},{featureType:'poi.school',elementType:'all',stylers:[{hue:'#c8c6c3'},{saturation:-91},{lightness:-7},{visibility:'on'}]},{featureType:'landscape.natural',elementType:'all',stylers:[{hue:'#c8c6c3'},{saturation:-71},{lightness:-18},{visibility:'on'}]},{featureType:'road.highway',elementType:'all',stylers:[{hue:'#dddbd7'},{saturation:-92},{lightness:60},{visibility:'on'}]},{featureType:'poi',elementType:'all',stylers:[{hue:'#dddbd7'},{saturation:-81},{lightness:34},{visibility:'on'}]},{featureType:'road.arterial',elementType:'all',stylers:[{hue:'#dddbd7'},{saturation:-92},{lightness:37},{visibility:'on'}]},{featureType:'transit',elementType:'geometry',stylers:[{hue:'#c8c6c3'},{saturation:4},{lightness:10},{visibility:'on'}]}];
-
-    google.maps.event.addDomListener(window, 'load', initSubmitMap());
-
-    function initSubmitMap(){
-        var mapCenter = new google.maps.LatLng(_latitude,_longitude);
-        var mapOptions = {
-            zoom: 15,
-            center: mapCenter,
-            disableDefaultUI: false,
-            scrollwheel: false,
-            styles: mapStyles
-        };
-        var mapElement = document.getElementById('map');
-        var map = new google.maps.Map(mapElement, mapOptions);
-
-        var markerPosition = new google.maps.LatLng(_latitude,_longitude);
-        var marker = new MarkerWithLabel({
-            position: markerPosition,
-            map: map,
-            icon: 'assets/img/marker.png',
-            labelContent: markerAddress,
-            labelAnchor: new google.maps.Point(50, 0),
-            labelClass: "marker-style"
-        });
-
-
-        var input = /** @type {HTMLInputElement} */( document.getElementById('find-way') );
-        var autocomplete = new google.maps.places.Autocomplete(input);
-        autocomplete.bindTo('bounds', map);
-        google.maps.event.addListener(autocomplete, 'place_changed', function() {
-            var place = autocomplete.getPlace();
-            if (!place.geometry) {
-                return;
-            }
-            if (place.geometry.viewport) {
-                map.fitBounds(place.geometry.viewport);
-            } else {
-                map.setCenter(place.geometry.location);
-                map.setZoom(17);
-            }
-            marker.setPosition(place.geometry.location);
-            marker.setVisible(true);
-
-            initialize(place.geometry.location.lat(), place.geometry.location.lng());
-
-            var address = '';
-            if (place.address_components) {
-                address = [
-                    (place.address_components[0] && place.address_components[0].short_name || ''),
-                    (place.address_components[1] && place.address_components[1].short_name || ''),
-                    (place.address_components[2] && place.address_components[2].short_name || '')
-                ].join(' ');
-            }
-        });
-
-
-        var directionsDisplay;
-        var directionsService = new google.maps.DirectionsService();
-        var finishPoint = new google.maps.LatLng(_latitude, _longitude);
-
-        function initialize(_findLatitude, _findLongitude) {
-            //alert(center);
-            var startPoint = new google.maps.LatLng(_findLatitude, _findLongitude);
-            directionsDisplay = new google.maps.DirectionsRenderer();
-            var mapOptions = {
-                zoom: 14,
-                center: startPoint,
-                scrollwheel: true,
-                styles: mapStyles
-            };
-            map = new google.maps.Map(document.getElementById('map'), mapOptions);
-            directionsDisplay.setMap(map);
-
-            var selectedMode = 'DRIVING';
-            var request = {
-                origin: startPoint,
-                destination: finishPoint,
-                travelMode: google.maps.TravelMode[selectedMode]
-            };
-            directionsService.route(request, function(response, status) {
-                if (status == google.maps.DirectionsStatus.OK) {
-                    directionsDisplay.setDirections(response);
-                }
-            });
-
-
-        }
-    }
-
-</script>
-
-
-</body>
-</html>
