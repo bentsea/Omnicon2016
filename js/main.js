@@ -191,7 +191,7 @@ dp(document).ready(function() {
                 latLng: [lats, lngs],
                 data: data_address,
                 options: {
-                    icon: "/img/marker.png"
+                    icon: "http://img.omnicononline.com/marker.png"
                 }
             }],
             options: {
