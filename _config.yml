@@ -13,3 +13,6 @@ markdown: kramdown
 permalink: pretty
 highlighter: pygments
 encoding: utf-8
+
+# Includes and Excludes
+include: [.htaccess]

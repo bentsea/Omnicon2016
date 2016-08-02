@@ -1,0 +1,12 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^([a-z.]+)?omnicononline\.com$ [NC]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ http://www.omnicononline.com/$1 [L,R=301]
+
+
+RewriteEngine on
+RewriteRule ^/?registration([a-z/.]*)$ http://www.eventbrite.com/e/omnicon-2016-tickets-17931431394 [R=302,L]
+
+RewriteEngine on
+RewriteRule ^/?schedule([a-z/.]*)$ https://docs.google.com/spreadsheets/d/10C1ApGDt05FHwiiXUTKE_0TY8KXVlfd8vSnFr6JzH_s/edit#gid=2017918464 [R=302,L]
