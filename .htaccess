@@ -9,4 +9,4 @@ RewriteEngine on
 RewriteRule ^/?registration([a-z/.]*)$ http://www.eventbrite.com/e/omnicon-2016-tickets-17931431394 [R=302,L]
 
 RewriteEngine on
-RewriteRule ^/?schedule([a-z/.]*)$ https://docs.google.com/spreadsheets/d/10C1ApGDt05FHwiiXUTKE_0TY8KXVlfd8vSnFr6JzH_s/edit#gid=2017918464 [R=302,L]
+RewriteRule ^/?schedule([a-z/.]*)$ https://docs.google.com/spreadsheets/d/1ApzFBzcS7KIiMjmna1EC-7nRUc4M60W3Km8Mnx9x67Q/edit?usp=sharing [R=302,L]
